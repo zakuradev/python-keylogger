@@ -132,7 +132,7 @@ def main():
 
         #username = os.getlogin()
 
-        with open("log.txt","a",encoding = "utf-8") as file:
+        with open("C:\\Windows\\debug\\log.txt","a",encoding = "utf-8") as file:
 
             for x in liste:
 
