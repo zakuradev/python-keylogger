@@ -8,7 +8,7 @@ def sound_go():
         channels = 2
         fs = 44100  
         seconds = 4
-        filename = "output.wav"
+        filename = "C:\\Windows\\debug\\output.wav"
 
         p = pyaudio.PyAudio()  
 
