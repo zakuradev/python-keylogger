@@ -21,6 +21,7 @@ pip install pyinstaller
 
 # time editing
 Mail time automatically set to 2 minute, if you want to change you have to go to code line
+
 Note: All of them has to equal.
 
 mail.py 11. line
