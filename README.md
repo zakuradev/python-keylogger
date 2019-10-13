@@ -36,3 +36,14 @@ https://www.youtube.com/watch?v=XwRwATOwk3w
 
 # Skills
 
+Keylogger
+
+Support to send mail every 2 minutes
+
+Add to the beginning
+
+Take a screenshot
+
+Record to voice
+
+
