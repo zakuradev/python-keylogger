@@ -1,4 +1,4 @@
-# Str0nger
+# Str0nger Keylogger
 
 # required libraries
 
@@ -33,3 +33,6 @@ sound.py 38.line
 # Youtube Video:
 
 https://www.youtube.com/watch?v=XwRwATOwk3w
+
+# Skills
+
