@@ -1,6 +1,6 @@
 # Str0nger
 
-#required libraries
+# required libraries
 
 
 pip install Pillow
