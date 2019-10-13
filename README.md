@@ -40,7 +40,7 @@ Keylogger
 
 Support to send mail every 2 minutes
 
-Add to the beginning
+adds itself to the startup
 
 Take a screenshot
 
